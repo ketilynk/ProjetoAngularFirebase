@@ -12,6 +12,18 @@ import { MessageService } from '../services/message.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  veiculo:any ={
+    modelo:null,
+    marca:null,
+    cor:null
+  }
+  concessionaria: any=[];
+
+  adicionar(){
+    this.concessionaria.push(...this.veiculo);
+    console.log(this.concessionaria)
+ 
+  }
 
   
 }
